@@ -1,0 +1,106 @@
+
+
+/*
+filters style
+*/
+
+
+section.filters {
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+/*Search button*/
+
+.filters button{
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    /*margin-left: 850px;*/
+    position: absolute;
+    transform: translateY(-50%);
+    right: 30px;
+    top: 50%;
+}
+
+/*search button hover opacity*/
+
+.filters button:hover {
+        opacity: 0.9;
+        color: #fff;
+    } 
+
+/*locations & amenities*/
+
+ .filters .locations,
+ .filters .amenities{
+    height: 100%;
+    width: 25%;
+    
+ }  
+
+/*location border*/
+
+ .filters .locations {
+    border: 1px solid #DDDDDD;
+    
+
+ }
+
+ /*location & amenities hover*/
+ 
+ .filters .locations h3,
+ .filters .amenities h3 {
+    font-weight: 600;
+    margin-left: 30px;
+    line-height: 0;
+ }  
+
+
+ .filters .locations h4,
+ .filters .amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 30px;
+ }  
+
+ /*location list style*/
+
+ section.filters ul.popover {
+   display: none;
+   list-style: none;
+   background-color: #FAFAFA;
+   border: 1px solid #DDDDDD;
+   border-radius: 4px;
+   position: relative;
+   padding: 30px;
+  /* width: 100%;*/
+ }
+
+ .filters .locations:hover .popover,
+ .filters .amenities:hover .popover {
+   display: block;
+ }
+
+ .filters ul.popover ul {
+   padding: 6px 0 6px 0;
+ }
+
+ .filters ul.popover li {
+   padding: 12px auto 12px 30px;
+   /*padding-top: 5px;
+   padding-bottom: 5px;*/
+ }
+
+ .filters ul.popover h2 {
+   line-height: 20px;
+ }
